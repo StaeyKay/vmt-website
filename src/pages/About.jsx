@@ -71,7 +71,7 @@ const About = () => {
         <div>
           <p className="mb-4 text-xs font-bold uppercase tracking-[0.25em] text-[#1A33E8]">Company overview</p>
           <h2 className="max-w-xl text-4xl font-black leading-tight tracking-[-0.03em] sm:text-5xl">
-            Practical innovation. Built for what comes next.
+            Practical innovation. Built for what comes nextt.
           </h2>
           <div className="mt-7 space-y-5 text-base leading-8 text-slate-600">
             <p>VM Technologies Investment is a technology solutions company and subsidiary of AM Development Projects Gh Limited (AM DevPro), established to deliver innovative, secure and scalable ICT solutions that enable organizations to thrive in an increasingly digital world.</p>
