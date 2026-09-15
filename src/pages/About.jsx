@@ -13,6 +13,7 @@ import {
   Support,
   Understand,
 } from "../assets";
+import Navbar from "../components/Navbar";
 
 const industries = [
   "Government Ministries, Departments and Agencies (MDAs)",
@@ -63,6 +64,8 @@ const leadership = [
 const About = () => {
   return (
     <main className="overflow-hidden bg-[#f7faff] text-[#0a1628]">
+      <Navbar />
+      {/* Hero section */}
       <section className="relative isolate min-h-[620px] overflow-hidden bg-[#071b3a] sm:min-h-[680px]">
         <img
           src={AboutHero}

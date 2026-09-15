@@ -142,7 +142,7 @@ export default function Contact() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <Navbar light/>
+      <Navbar />
 
       {/* Hero */}
       <section className="bg-gray-50 px-4 pb-12 pt-28 text-center sm:px-6 sm:pb-16 sm:pt-32 lg:px-8">
