@@ -8,7 +8,7 @@ const links = [
   { label: "Home", to: "/" },
   { label: "About", to: "/about" },
   { label: "Services", to: "/services" },
-  { label: "Projects", to: "/projects" },
+  //{ label: "Projects", to: "/projects" },
 ]
 
 // Render the original open navigation layout with a sticky cyan active state.
