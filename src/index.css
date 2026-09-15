@@ -1,1 +1,35 @@
 @import "tailwindcss";
+
+@theme {
+  --animate-partner-marquee: partner-marquee 34s linear infinite;
+
+  @keyframes partner-marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+}
+
+/* Rotate one fixed-size wheel so all three points share exactly one motion. */
+@keyframes star-wheel-spin {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+.star-wheel { animation: star-wheel-spin 30s linear infinite; }
+
+/* Counter-rotate each card so the orbit is uniform without tilting its text. */
+@keyframes star-card-counter-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(-360deg); }
+}
+
+.star-card-counter { animation: star-card-counter-spin 30s linear infinite; }
+
+.orbit-point {
+  transform: translate(-50%, -50%) rotate(var(--angle)) translateY(-13rem) rotate(calc(var(--angle) * -1));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .star-wheel, .star-card-counter { animation: none; }
+}
