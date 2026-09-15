@@ -28,7 +28,7 @@ const Navbar = () => {
     {/* NavLink connects each tab to its existing page file and supplies the active styling. */}
     <div className="hidden items-center gap-2 md:flex">{links.map(({ label, to }) => <NavLink key={to} to={to} end={to === "/"} className={({ isActive }) => `rounded-full px-4 py-2 text-sm transition duration-300 ${isActive ? "bg-[#1AE0F0] text-slate-950 shadow-[0_0_22px_rgba(26,224,240,0.4)]" : "text-white/85 hover:bg-white/10 hover:text-white"}`}>{label}</NavLink>)}</div>
     {/* This is intentionally a logo, not a link; the page is the homepage itself. */}
-    <div className="absolute left-1/2 -translate-x-1/2"><img alt="VM Technologies" className="h-10 w-10 object-contain" src={vmtLogo} /></div>
+    <NavLink to="/" className="absolute left-1/2 -translate-x-1/2"><img alt="VM Technologies" className="h-10 w-10 object-contain" src={vmtLogo} /></NavLink>
     {/* The CTA uses the same GitHub Pages-safe route as the navigation tabs. */}
     <NavLink to="/contact" className="ml-auto rounded-full bg-[#1AE0F0] px-5 py-3 text-xs font-semibold text-slate-950 shadow-lg shadow-slate-950/20 transition duration-300 hover:-translate-y-0.5 hover:bg-white hover:shadow-[0_10px_28px_rgba(26,224,240,0.38)] sm:px-6 sm:text-sm">Contact Us</NavLink>
   </nav></header>
