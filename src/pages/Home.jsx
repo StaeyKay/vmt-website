@@ -1,7 +1,7 @@
 // React hooks power the viewport-based reveal treatment.
 import { useEffect, useRef, useState } from "react"
 import Navbar from "../components/Navbar"
-import Footer from "../components/footer"
+import Footer from "../components/Footer"
 import cassavaLogo from "../assets/partners/Cassava.png"
 import eclofLogo from "../assets/partners/ECLOF.png"
 import googleLogo from "../assets/partners/Google.png"
