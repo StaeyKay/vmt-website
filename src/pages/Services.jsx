@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import { motion, useInView, AnimatePresence } from "framer-motion";
 import { ArrowRight, Check, ChevronDown, Quote, Star } from "lucide-react";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import servicesBackground from "../assets/images/pexels-sash2s-16592498.jpg";
 import microsoftLicensingBackground from "../assets/images/microsft licesing.jpg";
 import itInfrastructureBackground from "../assets/images/it-infrastructure-3.jpg";
@@ -793,7 +794,7 @@ function ServiceCarousel({ activeIndex, setActiveIndex }) {
             {selectedSlide.description}
           </motion.p>
 
-          {/* Discover Location button */}
+          {/* CONTACT US button */}
           <motion.div
             key={`btn-${activeIndex}`}
             initial={{ opacity: 0 }}
@@ -834,9 +835,9 @@ function ServiceCarousel({ activeIndex, setActiveIndex }) {
                   fontSize: "10px",
                 }}
               >
-                ▶
+                
               </span>
-              Discover Location
+              CONTACT US
             </button>
           </motion.div>
         </div>
@@ -1829,6 +1830,7 @@ export default function Services() {
           </motion.div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }
