@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from "react-router"
+import { createHashRouter, RouterProvider } from "react-router"
 import Homepage from "./pages/Home"
 import About from "./pages/About"
 import Contact from "./pages/Contact"
@@ -6,7 +6,8 @@ import Projects from "./pages/Projects"
 import Services from "./pages/Services"
 
 
-const router = createBrowserRouter([
+// Hash-based URLs work on GitHub Pages without server-side route rewrites.
+const router = createHashRouter([
   {
     path: "/",
     element: <Homepage />
