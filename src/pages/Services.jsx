@@ -576,108 +576,95 @@ function RoadmapStep({ step, index, total }) {
 function ServiceCarousel({ activeIndex, setActiveIndex }) {
   const slides = [
     {
-      title: "Switzerland Alps",
-      subtitle: "SAINT ANTÖNIEN",
-      description: "Mauri maecenas tortor amet augue accumsan feugiat. Maecenas tincidunt velit ut pellentesque porta, duis eros facilisi sem.",
+      title: "Software Development",
+      subtitle: "SOFTWARE DEVELOPMENT",
+      description: "We build scalable, high-performance software tailored to your business. From web platforms to custom tools, we turn complex challenges into clean, reliable solutions.",
       image: servicesBackground,
-      location: "Switzerland",
-      cardLabel: "Japan Alps",
-      cardTitle: "NAGANO\\nPREFECTURE",
-      detail: "Mountain views",
+      location: "VM Technologies",
+      cardLabel: "VM Technologies · Services",
+      cardTitle: "SOFTWARE\nDEVELOPMENT",
+      detail: "Custom solutions",
     },
     {
-      title: "Sahara Desert",
-      subtitle: "MARRAKECH MERZOUGA",
-      description: "Golden dunes and layered desert light create a slow, cinematic rhythm for the adventurous spirit seeking wide open spaces.",
+      title: "Microsoft Licensing",
+      subtitle: "MICROSOFT LICENSING",
+      description: "Simplify your Microsoft licensing with expert guidance. We help you find the right plans, reduce costs, and stay fully compliant across your organisation.",
       image: microsoftLicensingBackground,
-      location: "Morocco",
-      cardLabel: "Sahara Desert · Morocco",
-      cardTitle: "MARRAKECH\\nMERZOUGA",
-      detail: "Desert horizon",
+      location: "VM Technologies",
+      cardLabel: "VM Technologies · Services",
+      cardTitle: "MICROSOFT\nLICENSING",
+      detail: "License management",
     },
     {
-      title: "Yosemite Valley",
-      subtitle: "YOSEMITE NATIONAL PARK",
-      description: "Vast granite walls and wild trails invite a deeper connection to nature and a slower, more intentional way of seeing.",
-      image: servicesBackground,
-      location: "United States",
-      cardLabel: "Sierra Nevada · United States",
-      cardTitle: "YOSEMITE\\nNATIONAL PARK",
-      detail: "Valley trails",
+      title: "IT Services",
+      subtitle: "IT SERVICES & INFRASTRUCTURE",
+      description: "Robust and reliable IT infrastructure to support your business operations. We provide end-to-end IT services, network management, and support to ensure smooth daily operations.",
+      image: itInfrastructureBackground,
+      location: "VM Technologies",
+      cardLabel: "VM Technologies · Services",
+      cardTitle: "IT SERVICES &\nINFRASTRUCTURE",
+      detail: "Infrastructure support",
     },
     {
-      title: "Los Lances Beach",
-      subtitle: "LOS LANCES BEACH",
-      description: "Sunlit coastlines and glassy waves bring an easy, airy mood to every day of the journey along this wild Atlantic shore.",
-      image: servicesBackground,
-      location: "Tarifa · Spain",
-      cardLabel: "Tarifa · Spain",
-      cardTitle: "LOS LANCES\\nBEACH",
-      detail: "Coastal light",
+      title: "Digital Transformation",
+      subtitle: "DIGITAL TRANSFORMATION CONSULTING",
+      description: "Empower your business with strategic digital transformation. We help you modernize processes, adopt new technologies, and drive innovation for sustainable growth.",
+      image: digitalTransformationBackground,
+      location: "VM Technologies",
+      cardLabel: "VM Technologies · Services",
+      cardTitle: "DIGITAL\nTRANSFORMATION",
+      detail: "Strategic consulting",
     },
     {
-      title: "Patagonia Peaks",
-      subtitle: "PATAGONIA PEAKS",
-      description: "Ice-carved ridges and remote silence reward those who chase a larger, quieter kind of wonder at the end of the world.",
-      image: microsoftLicensingBackground,
-      location: "Argentina",
-      cardLabel: "Andes · Argentina",
-      cardTitle: "PATAGONIA\\nPEAKS",
-      detail: "Glacial air",
+      title: "AI & Intelligent Tech",
+      subtitle: "AI AND INTELLIGENT TECHNOLOGY",
+      description: "Unlock the power of artificial intelligence. We build and integrate intelligent solutions that automate tasks, analyze data, and create smarter experiences for your business.",
+      image: aiTechnologyBackground,
+      location: "VM Technologies",
+      cardLabel: "VM Technologies · Services",
+      cardTitle: "AI & INTELLIGENT\nTECHNOLOGY",
+      detail: "AI Capabilities",
     },
     {
-      title: "Kyoto Trails",
-      subtitle: "KYOTO TRAILS",
-      description: "Lanterns, cedar paths, and thoughtful detail turn each moment into a quiet, memorable escape through ancient Japan.",
-      image: servicesBackground,
-      location: "Japan",
-      cardLabel: "Kinki · Japan",
-      cardTitle: "KYOTO\\nTRAILS",
-      detail: "Temple light",
+      title: "Cybersecurity",
+      subtitle: "CYBERSECURITY SERVICES",
+      description: "Protect your business from evolving threats. We provide comprehensive cybersecurity services, risk assessments, and proactive defense strategies to keep your data secure.",
+      image: cybersecurityBackground,
+      location: "VM Technologies",
+      cardLabel: "VM Technologies · Services",
+      cardTitle: "CYBERSECURITY\nSERVICES",
+      detail: "Security defense",
     },
     {
-      title: "Banff Escape",
-      subtitle: "BANFF ESCAPE",
-      description: "Unfolding lakes and woodland views create a crisp, elevated sense of space and calm in the heart of the Rockies.",
-      image: microsoftLicensingBackground,
-      location: "Canada",
-      cardLabel: "Alberta · Canada",
-      cardTitle: "BANFF\\nESCAPE",
-      detail: "Lake air",
+      title: "Mobile App Development",
+      subtitle: "MOBILE APPLICATION DEVELOPMENT",
+      description: "Build engaging and intuitive mobile experiences. We design and develop custom iOS and Android applications that delight users and drive your business forward on the go.",
+      image: mobileAppBackground,
+      location: "VM Technologies",
+      cardLabel: "VM Technologies · Services",
+      cardTitle: "MOBILE APP\nDEVELOPMENT",
+      detail: "Mobile solutions",
     },
     {
-      title: "Algarve Shore",
-      subtitle: "ALGARVE SHORE",
-      description: "Cliffs, coves, and golden light make every stop feel effortlessly cinematic and open along the southern coast.",
-      image: servicesBackground,
-      location: "Portugal",
-      cardLabel: "Faro · Portugal",
-      cardTitle: "ALGARVE\\nSHORE",
-      detail: "Sea horizon",
-    },
-    {
-      title: "Dolomites Drift",
-      subtitle: "DOLOMITES DRIFT",
-      description: "Sharp peaks and rolling cloudlines create a dramatic frame for a slow mountain reset in northern Italy.",
-      image: microsoftLicensingBackground,
-      location: "Italy",
-      cardLabel: "South Tyrol · Italy",
-      cardTitle: "DOLOMITES\\nDRIFT",
-      detail: "Cloud ridge",
-    },
-    {
-      title: "Santorini Calm",
-      subtitle: "SANTORINI CALM",
-      description: "Whitewashed layers, blue water, and expansive light turn every glance into a postcard memory on the Aegean.",
-      image: servicesBackground,
-      location: "Greece",
-      cardLabel: "Cyclades · Greece",
-      cardTitle: "SANTORINI\\nCALM",
-      detail: "Aegean glow",
+      title: "Workplace Solutions",
+      subtitle: "WORKPLACE AND COLLABORATION SOLUTIONS",
+      description: "Empower your team with modern workplace solutions. We provide collaboration tools and platforms that connect your people, streamline workflows, and boost productivity anywhere.",
+      image: workplaceBackground,
+      location: "VM Technologies",
+      cardLabel: "VM Technologies · Services",
+      cardTitle: "WORKPLACE &\nCOLLABORATION",
+      detail: "Team productivity",
     },
   ];
 
   const selectedSlide = slides[activeIndex] ?? slides[0];
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setActiveIndex((prev) => (prev + 1) % slides.length);
+    }, 7000);
+    return () => clearInterval(timer);
+  }, [slides.length]);
 
   return (
     <div
@@ -700,11 +687,11 @@ function ServiceCarousel({ activeIndex, setActiveIndex }) {
         <motion.div
           key={slide.subtitle}
           animate={{ opacity: idx === activeIndex ? 1 : 0 }}
-          transition={{ duration: 0.9, ease: [0.4, 0, 0.2, 1] }}
+          transition={{ duration: 1.5, ease: [0.4, 0, 0.2, 1] }}
           style={{
             position: "absolute",
             inset: 0,
-            backgroundImage: \`url(\${slide.image})\`,
+            backgroundImage: `url(${slide.image})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             willChange: "opacity",
@@ -746,7 +733,7 @@ function ServiceCarousel({ activeIndex, setActiveIndex }) {
         >
           {/* Accent line + location */}
           <motion.div
-            key={\`loc-\${activeIndex}\`}
+            key={`loc-${activeIndex}`}
             initial={{ opacity: 0, x: -10 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
@@ -769,16 +756,16 @@ function ServiceCarousel({ activeIndex, setActiveIndex }) {
 
           {/* Big stacked title */}
           <motion.h2
-            key={\`title-\${activeIndex}\`}
+            key={`title-${activeIndex}`}
             initial={{ opacity: 0, y: 22 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1] }}
             style={{
               margin: "0 0 16px",
-              fontSize: "clamp(48px, 5.5vw, 84px)",
+              fontSize: "clamp(32px, 3.5vw, 56px)",
               lineHeight: 0.9,
               letterSpacing: "-0.04em",
-              fontWeight: 800,
+              fontWeight: 600,
               fontFamily: "'Inter', sans-serif",
               textTransform: "uppercase",
             }}
@@ -790,7 +777,7 @@ function ServiceCarousel({ activeIndex, setActiveIndex }) {
 
           {/* Description */}
           <motion.p
-            key={\`desc-\${activeIndex}\`}
+            key={`desc-${activeIndex}`}
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.55, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
@@ -808,7 +795,7 @@ function ServiceCarousel({ activeIndex, setActiveIndex }) {
 
           {/* Discover Location button */}
           <motion.div
-            key={\`btn-\${activeIndex}\`}
+            key={`btn-${activeIndex}`}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.18 }}
@@ -877,8 +864,8 @@ function ServiceCarousel({ activeIndex, setActiveIndex }) {
               const slide = slides[(activeIndex + i) % slides.length];
               return (
                 <motion.button
-                  key={\`card-\${(activeIndex + i) % slides.length}\`}
-                  layoutId={\`card-layout-\${(activeIndex + i) % slides.length}\`}
+                  key={`card-${(activeIndex + i) % slides.length}`}
+                  layoutId={`card-layout-${(activeIndex + i) % slides.length}`}
                   type="button"
                   onClick={() => setActiveIndex((activeIndex + i) % slides.length)}
                   initial={{ opacity: 0, y: 32 }}
@@ -891,12 +878,12 @@ function ServiceCarousel({ activeIndex, setActiveIndex }) {
                     /* Uniform height for all cards */
                     height: "260px",
                     border: "none",
-                    borderRadius: "16px 16px 0 0",
+                    borderRadius: "16px",
                     overflow: "hidden",
                     position: "relative",
                     cursor: "pointer",
                     padding: 0,
-                    backgroundImage: \`url(\${slide.image})\`,
+                    backgroundImage: `url(${slide.image})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                     boxShadow: "0 16px 36px rgba(0,0,0,0.32)",
@@ -938,7 +925,7 @@ function ServiceCarousel({ activeIndex, setActiveIndex }) {
                     >
                       {slide.cardLabel}
                     </span>
-                    {slide.cardTitle.split("\\n").map((line, li) => (
+                    {slide.cardTitle.split("\n").map((line, li) => (
                       <span
                         key={li}
                         style={{
@@ -1041,6 +1028,8 @@ function ServiceCarousel({ activeIndex, setActiveIndex }) {
     </div>
   );
 }
+
+//-- ste
 
 /* ─── StepCard ────────────────────────────────────────────────── */
 function StepCard({ step, index }) {
@@ -1208,6 +1197,8 @@ function TestimonialCard({ testimonial, index }) {
         >
           {testimonial.name[0]}
         </div>
+        
+        //- --- adding the 360 admin sector to the OSIRIS software 7
         <div>
           <p
             style={{
